@@ -16,22 +16,32 @@ struct SideBar<Drawer, Content>: View where Drawer: View, Content: View {
     let drawer: () -> Drawer
     let drawer: () -> Content
     
-    init(isOpen: Binding<Bool>, @ViewBuilder drawer: @escaping () -> View) {
-        self.isOpen = isOpen
+    init(isOpen: Binding<Bool>, @ViewBuilder drawer: @escaping () -> Drawer, @ViewBuilder content: @escaping () -> Content) {
+        self._isOpen = isOpen
         self.drawer = drawer
+        self.content = content
     }
     
     var body: some View {
         
-        VStack {
-            Image(systemName: "globe")
-             
+        ZStack {
+            Group {
+                if isOpen {
+                    drawer()
+                }
+            }
+            content()
+                .cornerRadius(isOpen ?  20.0 : 0.0)
+                .onTapGesture {
+                    self.isOpen = false
+                }
+            
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        SideBar()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SideBar()
+//    }
+//}
