@@ -9,20 +9,29 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SideBar<Drawer, Content>: View where Drawer: View, Content: View {
+    
+    @Binding var isOpen: Bool
+    
+    let drawer: () -> Drawer
+    let drawer: () -> Content
+    
+    init(isOpen: Binding<Bool>, @ViewBuilder drawer: @escaping () -> View) {
+        self.isOpen = isOpen
+        self.drawer = drawer
+    }
+    
     var body: some View {
+        
         VStack {
             Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+             
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SideBar()
     }
 }
