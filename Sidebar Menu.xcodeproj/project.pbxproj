@@ -14,6 +14,7 @@
 		E44A15512A2770B3006BDBDC /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44A15502A2770B3006BDBDC /* Enumeration.swift */; };
 		E44A15532A27738B006BDBDC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44A15522A27738B006BDBDC /* BaseView.swift */; };
 		E44A15552A2775FC006BDBDC /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44A15542A2775FC006BDBDC /* SideBar.swift */; };
+		E44A15572A277868006BDBDC /* SideBarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44A15562A277868006BDBDC /* SideBarList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E44A15502A2770B3006BDBDC /* Enumeration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumeration.swift; sourceTree = "<group>"; };
 		E44A15522A27738B006BDBDC /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		E44A15542A2775FC006BDBDC /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		E44A15562A277868006BDBDC /* SideBarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				E44A15412A27694E006BDBDC /* Sidebar_MenuApp.swift */,
 				E44A15432A27694E006BDBDC /* ContentView.swift */,
 				E44A15522A27738B006BDBDC /* BaseView.swift */,
+				E44A15562A277868006BDBDC /* SideBarList.swift */,
 				E44A15452A27694E006BDBDC /* Assets.xcassets */,
 				E44A15472A27694E006BDBDC /* Sidebar_Menu.entitlements */,
 				E44A15482A27694E006BDBDC /* Preview Content */,
@@ -150,6 +153,7 @@
 			files = (
 				E44A15552A2775FC006BDBDC /* SideBar.swift in Sources */,
 				E44A15442A27694E006BDBDC /* ContentView.swift in Sources */,
+				E44A15572A277868006BDBDC /* SideBarList.swift in Sources */,
 				E44A15422A27694E006BDBDC /* Sidebar_MenuApp.swift in Sources */,
 				E44A15512A2770B3006BDBDC /* Enumeration.swift in Sources */,
 				E44A15532A27738B006BDBDC /* BaseView.swift in Sources */,

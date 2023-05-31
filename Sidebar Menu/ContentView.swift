@@ -15,10 +15,11 @@ struct ContentView: View {
     var body: some View {
         
         NavigationView {
-            SideBar(isOpen: $isOpen) {
-                //
-            } content: {
-                Base
+            SideBar(isOpen: $isOpen, drawer: {
+                Color(.gray)
+                    .edgesIgnoringSafeArea(.all)
+            }) {
+                BaseView(isOpen: self.$isOpen)
             }
 
              

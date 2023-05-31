@@ -12,19 +12,18 @@ import SwiftUI
 struct BaseView: View {
     
     @Binding var isOpen: Bool
-     
+    
     var body: some View {
         
-        NavigationView {
-            Text("World!")
-                .font(.system(.largeTitle))
-                .bold()
-                .navigationBarItems(leading: Button(action: {
-                    self.isOpen = true 
-                }, label: {
-                    Image(systemName: "text.justify ")
-                }))
-        }
+        Text("World!")
+            .font(.system(.largeTitle))
+            .bold()
+            .navigationBarItems(leading: Button(action: {
+                self.isOpen = true
+            }, label: {
+                Image(systemName: "text.justify ")
+            }))
+        
     }
 }
 

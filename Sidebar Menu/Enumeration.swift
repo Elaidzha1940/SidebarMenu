@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-enum EnumerationItem {
+enum EnumerationItem: CaseIterable {
     
     case dashboard
     case clients
