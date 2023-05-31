@@ -28,9 +28,13 @@ struct SideBar<Drawer, Content>: View where Drawer: View, Content: View {
             Group {
                 if isOpen {
                     drawer()
+                        .frame((minWidth: 0.0, maxWidth: .infinity, minHeight: 0.0, maxHeight: .infinity, alignment: .topLeading))
                 }
             }
             content()
+                .animation(.easeIn)
+                .scaleEffect(isOpen ? 0.75 : 1.0, anchor: .trailing)
+                .offset(x: isOpen ? UIScreen.main.bounds.width * 0.4 : 0.0, y: 0.0 )
                 .cornerRadius(isOpen ?  20.0 : 0.0)
                 .onTapGesture {
                     self.isOpen = false
