@@ -10,16 +10,26 @@
 import SwiftUI
 
 struct BaseView: View {
+    
+    @Binding var isOpen: Bool
+     
     var body: some View {
         
-        Text("World!")
-            .font(.system(.largeTitle))
-            .bold()
+        NavigationView {
+            Text("World!")
+                .font(.system(.largeTitle))
+                .bold()
+                .navigationBarItems(leading: Button(action: {
+                    self.isOpen = true 
+                }, label: {
+                    Image(systemName: "text.justify ")
+                }))
+        }
     }
 }
 
 struct BaseView_Previews: PreviewProvider {
     static var previews: some View {
-        BaseView()
+        BaseView(isOpen: .constant(true))
     }
 }
