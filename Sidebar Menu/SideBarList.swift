@@ -16,11 +16,15 @@ struct SideBarList: View {
     var body: some View {
         
         VStack {
-            ForEach(EnumerationItem.allCases, content: <#T##(Binding<Identifiable>) -> _#>) {
-                
+            ForEach(EnumerationItem.allCases, id:
+                        \.self) { menu in
+                HStack(alignment: .center, spacing: 10) {
+                    menu.icon
+                        .frame(width: 40.0, height: 40.0)
+                    Text(menu.title )
+                }
             }
         }
-        
     }
 }
 
