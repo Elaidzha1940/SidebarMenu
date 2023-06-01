@@ -67,8 +67,6 @@
 				E44A15452A27694E006BDBDC /* Assets.xcassets */,
 				E44A15472A27694E006BDBDC /* Sidebar_Menu.entitlements */,
 				E44A15482A27694E006BDBDC /* Preview Content */,
-				E44A15502A2770B3006BDBDC /* Enumeration.swift */,
-				E44A15542A2775FC006BDBDC /* SideBar.swift */,
 			);
 			path = "Sidebar Menu";
 			sourceTree = "<group>";
@@ -76,6 +74,8 @@
 		E44A15482A27694E006BDBDC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				E44A15542A2775FC006BDBDC /* SideBar.swift */,
+				E44A15502A2770B3006BDBDC /* Enumeration.swift */,
 				E44A15492A27694E006BDBDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -295,7 +295,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -333,7 +333,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;

@@ -22,8 +22,6 @@ struct ContentView: View {
             }) {
                 BaseView(isOpen: self.$isOpen)
             }
-
-             
         }
     }
 }

@@ -15,7 +15,7 @@ struct BaseView: View {
     
     var body: some View {
         
-        Text("World!")
+        Text("Base")
             .font(.system(.largeTitle))
             .bold()
             .navigationBarItems(leading: Button(action: {

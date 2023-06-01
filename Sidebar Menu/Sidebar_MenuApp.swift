@@ -1,9 +1,11 @@
+//  /*
 //
-//  Sidebar_MenuApp.swift
-//  Sidebar Menu
+//  Project: Sidebar Menu
+//  File: Sidebar_MenuApp.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 31.05.2023
 //
-//  Created by Elaidzha Shchukin on 31.05.2023.
-//
+//  */
 
 import SwiftUI
 
