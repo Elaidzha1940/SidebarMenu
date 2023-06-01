@@ -18,7 +18,7 @@ struct ContentView: View {
             SideBar(isOpen: $isOpen, drawer: {
                 Color(.gray)
                     .edgesIgnoringSafeArea(.all)
-                SideBarList(isOpen: $isOpen)
+                SideBarList(isOpen: self.$isOpen)
             }) {
                 BaseView(isOpen: self.$isOpen)
             }

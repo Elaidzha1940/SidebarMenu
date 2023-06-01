@@ -14,7 +14,7 @@ struct SideBar<Drawer, Content>: View where Drawer: View, Content: View {
     @Binding var isOpen: Bool
     
     let drawer: () -> Drawer
-    let drawer: () -> Content
+    let content: () -> Content
     
     init(isOpen: Binding<Bool>, @ViewBuilder drawer: @escaping () -> Drawer, @ViewBuilder content: @escaping () -> Content) {
         self._isOpen = isOpen
@@ -28,7 +28,7 @@ struct SideBar<Drawer, Content>: View where Drawer: View, Content: View {
             Group {
                 if isOpen {
                     drawer()
-                        .frame((minWidth: 0.0, maxWidth: .infinity, minHeight: 0.0, maxHeight: .infinity, alignment: .topLeading))
+                        .frame(minWidth: 0.0, maxWidth: .infinity, minHeight: 0.0, maxHeight: .infinity, alignment: .topLeading)
                 }
             }
             content()
