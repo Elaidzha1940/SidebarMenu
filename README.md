@@ -1,0 +1,2 @@
+⌨️ Sidebar with different effects.
+=======
